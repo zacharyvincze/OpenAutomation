@@ -25,6 +25,11 @@
     color: #2C3E50;
 }
 
+.text-faded {
+    color: #2C3E50;
+    opacity: 0.6;
+}
+
 .text-secondary {
     color: #4ECDC4;
 }

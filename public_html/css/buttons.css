@@ -12,14 +12,34 @@
     margin-right: auto;
 }
 
-.btn-red {
+.btn-red-active {
     background-color: #E74C3C;
+    border: 2px solid #E74C3C;
 }
 
-.btn-green {
+.btn-red-unactive {
+    background-color: transparent;
+    border: 2px solid #E74C3C;
+    color: #E74C3C;
+}
+
+.btn-green-active {
     background-color: #2ecc71;
+    border: 2px solid #2ecc71;
+}
+
+.btn-green-unactive {
+    background-color: transparent;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
 }
 
 .btn-round {
     border-radius: 10px;
+}
+
+.btn-io {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }

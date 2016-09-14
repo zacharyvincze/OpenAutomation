@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/css/text.css" />
         <link rel="stylesheet" href="/css/buttons.css" />
         <link rel="stylesheet" href="/css/jumbotron.css" />
+        <link rel="stylesheet" href="/css/dashboard.css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <script src="/js/library/jquery/jquery-3.1.0.min.js"></script>
         <script src="/js/automation.js"></script>

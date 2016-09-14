@@ -19,7 +19,7 @@
         <p class="text text-white text-big">
             Easy home automation with the Raspberry Pi.
         </p>
-        <a href="dashboard.php" class="btn btn-red btn-round">Get Started</a>
+        <a href="dashboard.php" class="btn btn-red-active btn-round">Get Started</a>
     </div>
 </div>
 <?php include_once "../resources/templates/footer.php"; ?>

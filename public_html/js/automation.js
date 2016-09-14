@@ -4,7 +4,10 @@ $(document).ready(function() {
             type: 'post',
             url: '/lighton.php',
             success: function() {
-                $('.status').text('on');
+                $('#lightoff').removeClass('btn-red-active');
+                $('#lightoff').addClass('btn-red-unactive');
+                $('#lighton').removeClass('btn-green-unactive');
+                $('#lighton').addClass('btn-green-active');
             }
         });
     });
@@ -13,7 +16,10 @@ $(document).ready(function() {
             type: 'post',
             url: '/lightoff.php',
             success: function() {
-                $('.status').text("off");
+                $('#lightoff').removeClass('btn-red-unactive');
+                $('#lightoff').addClass('btn-red-active');
+                $('#lighton').removeClass('btn-green-active');
+                $('#lighton').addClass('btn-green-unactive');
             }
         });
     });
