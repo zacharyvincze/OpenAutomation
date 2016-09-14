@@ -1,0 +1,44 @@
+.text {
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-normal {
+    font-size: 16px;
+}
+
+.text-big {
+    font-size: 24px;
+}
+
+.text-title {
+    font-size: 48px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: #2C3E50;
+}
+
+.text-secondary {
+    color: #4ECDC4;
+}
+
+.text-red {
+    color: red;
+}
+
+@media (max-width: 700px) {
+    .text-title {
+        font-size: 35px;
+    }
+
+    .text-big {
+        font-size: 16px;
+    }
+}
