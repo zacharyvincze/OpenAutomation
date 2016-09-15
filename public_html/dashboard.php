@@ -24,7 +24,7 @@
                 <p class='text text-small text-faded'>PIN #" . $row['pin'] . "</p>
             </div><div class='btn-cell'>
                 <div class='btn-toolbar'>
-                    <button class='btn btn-io " . $green_class . "' id='lighton' type='button'>ON</button>
+                    <button class='btn btn-io " . $green_class . "' id='lighton' onclick='turnOn(" . $row['id'] . ")' type='button'>ON</button>
                     <button class='btn btn-io " . $red_class . "' id='lightoff' type='button'>OFF</button>
                 </div>
             </div>

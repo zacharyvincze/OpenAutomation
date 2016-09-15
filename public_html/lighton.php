@@ -6,7 +6,8 @@
     include_once "../resources/library/connect.php";
     echo exec("sudo python ./python/lighton.py 2>&1", $output);
     
-    $id = 1;
+    $id = $_POST['id'];
+    echo($id);
     
     $query = "UPDATE lights SET status = 'on' WHERE id=?";
     $stmt = $connect->prepare($query);

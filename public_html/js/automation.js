@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#lighton').click(function() {
+    $('#lighon').click(function() {
         $.ajax({
             type: 'post',
             url: '/lighton.php',
@@ -11,7 +11,7 @@ $(document).ready(function() {
             }
         });
     });
-    $('#lightoff').click(function() {
+    $('#lighoff').click(function() {
         $.ajax({
             type: 'post',
             url: '/lightoff.php',
@@ -24,3 +24,16 @@ $(document).ready(function() {
         });
     });
 });
+
+function turnOn(id) {
+    $.ajax({
+        type: 'post',
+        url: '/lighton.php',
+        data: {
+            id: id
+        },
+        success: function(html) {
+            alert(html);
+        }
+    });
+}
