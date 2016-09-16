@@ -1,39 +1,41 @@
-$(document).ready(function() {
-    $('#lighon').click(function() {
-        $.ajax({
-            type: 'post',
-            url: '/lighton.php',
-            success: function() {
-                $('#lightoff').removeClass('btn-red-active');
-                $('#lightoff').addClass('btn-red-unactive');
-                $('#lighton').removeClass('btn-green-unactive');
-                $('#lighton').addClass('btn-green-active');
-            }
-        });
-    });
-    $('#lighoff').click(function() {
-        $.ajax({
-            type: 'post',
-            url: '/lightoff.php',
-            success: function() {
-                $('#lightoff').removeClass('btn-red-unactive');
-                $('#lightoff').addClass('btn-red-active');
-                $('#lighton').removeClass('btn-green-active');
-                $('#lighton').addClass('btn-green-unactive');
-            }
-        });
-    });
-});
-
-function turnOn(id) {
+function turnOn(id, pin) {
     $.ajax({
         type: 'post',
         url: '/lighton.php',
         data: {
-            id: id
+            id: id,
+            pin: pin
         },
         success: function(html) {
-            alert(html);
+            if(html == 'true') {
+                $('#lighton' + id).removeClass('btn-green-unactive');
+                $('#lighton' + id).addClass('btn-green-active');
+                $('#lightoff' + id).removeClass('btn-red-active');
+                $('#lightoff' + id).addClass('btn-red-unactive');
+            } else {
+                alert(html);
+            }
+        }
+    });
+}
+
+function turnOff(id, pin) {
+    $.ajax({
+        type: 'post',
+        url: '/lightoff.php',
+        data: {
+            id: id,
+            pin: pin
+        },
+        success: function(html) {
+            if(html == 'true') {
+                $('#lightoff' + id).removeClass('btn-red-unactive');
+                $('#lightoff' + id).addClass('btn-red-active');
+                $('#lighton' + id).removeClass('btn-green-active');
+                $('#lighton' + id).addClass('btn-green-unactive');
+            } else {
+                alert(html);
+            }
         }
     });
 }

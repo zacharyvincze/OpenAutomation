@@ -4,6 +4,6 @@ require_once "../resources/configuration/config.php";
 $connect = new mysqli(HOST, USER, PASSWORD, DATABASE);
 
 if($connect->connect_error) {
-    die("Connection to database failed!");
+    die("Connection to database failed: \n\n" . htmlspecialchars($connect->connect_error));
 }
 ?>

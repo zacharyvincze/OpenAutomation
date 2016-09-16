@@ -1,14 +1,15 @@
 import RPi.GPIO as GPIO
 import time
+import sys
 
 GPIO.setmode(GPIO.BOARD)
 
-pinlist = [12]
+pinlist = [int(sys.argv[1])]
 
 for i in pinlist:
 	GPIO.setwarnings(False)
 	GPIO.setup(i, GPIO.OUT)
-	GPIO.cleanup(12)
+	GPIO.cleanup(i)
 
 def trigger():
 	for i in pinlist:

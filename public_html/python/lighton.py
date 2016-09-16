@@ -1,9 +1,10 @@
 import RPi.GPIO as GPIO
 import time
+import sys
 
 GPIO.setmode(GPIO.BOARD)
 
-pinlist = [12]
+pinlist = [int(sys.argv[1])]
 
 for i in pinlist:
 	GPIO.setwarnings(False)
