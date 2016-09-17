@@ -8,3 +8,7 @@ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
+
+.container {
+    box-sizing: border-box;
+}
