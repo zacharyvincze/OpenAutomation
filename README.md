@@ -3,7 +3,7 @@
 
 ## Requirements
 You need the following in order to use OpenAutomation.
-- PHP 5.5 or later
+- PHP 5 or later
 - MySQL
 
 ## Installation
