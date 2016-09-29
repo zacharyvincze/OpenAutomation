@@ -9,6 +9,17 @@ header {
     padding: 0px 10px;
 }
 
+nav {
+    display: block;
+    width: 100%;
+}
+
 nav a {
     text-decoration: none;
+    display: inline-block;
+}
+
+nav .right {
+    float: right;
+    cursor: pointer;
 }

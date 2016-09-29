@@ -1,0 +1,16 @@
+/* Specific styling */
+#pin-input {
+    width: 20%;
+}
+
+#name-input {
+    width: 60%;
+}
+
+form input {
+    margin: 20px 0;
+}
+
+form {
+    text-align: center;
+}
