@@ -4,7 +4,7 @@
 ?>
 
 <?php
-    $query = "SELECT * FROM lights";
+    $query = "SELECT * FROM connections";
     $stmt = $connect->prepare($query);
     $stmt->execute();
     $result = $stmt->get_result();

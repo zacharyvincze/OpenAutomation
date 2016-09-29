@@ -12,7 +12,7 @@
     if(!is_numeric($pin)) die ("Invalid pin number!");
     
     // Add values to the database
-    $query = "INSERT INTO lights(name, pin) VALUES (?, ?)";
+    $query = "INSERT INTO connections(name, pin) VALUES (?, ?)";
     $stmt = $connect->prepare($query);
     if(false == $stmt) die ("There was an error with the database: \n\n" . htmlspecialchars($connect->error));
     $stmt->bind_param('si', $name, $pin);

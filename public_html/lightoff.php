@@ -13,7 +13,7 @@
     $command_output = exec("sudo python ./python/lightoff.py " . $pin . " 2>&1", $output, $return_var);
     if($return_var) die("There was an error with the python script. \n\n" . $command_output);
     
-    $query = "UPDATE lights SET status = 'off' WHERE id=?";
+    $query = "UPDATE connections SET status = 'off' WHERE id=?";
     $stmt = $connect->prepare($query);
     if(false===$stmt) die ("There was an error with the database: \n\n" . htmlspecialchars($connect->error));
     $stmt->bind_param('s', $id);
