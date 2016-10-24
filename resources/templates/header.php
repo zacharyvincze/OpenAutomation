@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="/css/modal.css" />
         <link rel="stylesheet" href="/css/form.css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <script src="/js/library/jquery/jquery-3.1.0.min.js"></script>
+        <script src="/js/vendors/jquery/jquery-3.1.0.min.js"></script>
         <script src="/js/automation.js"></script>
         <script src="/js/modal.js"></script>
         <script src="/js/add.js"></script>
